@@ -22,7 +22,7 @@ namespace APIMoviesOdata
         protected void Application_BeginRequest()
         {
 
-            string[] allowedOrigin = new string[] { "https://localhost:44363" };
+            string[] allowedOrigin = new string[] { "https://localhost:44339" };
             var origin = HttpContext.Current.Request.Headers["Origin"];
             if (origin != null && allowedOrigin.Contains(origin))
             {
